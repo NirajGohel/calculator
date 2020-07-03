@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/calculator/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="input-container">
+            <input type="text" id="input" autocomplete="off" disabled>
+            <input type="text" id="ans" autocomplete="off" disabled>
+        </div>
+
+        <div class="button-container">
+            <div class="row">                
+                <button id="c">C</button>
+                <button id="ce">CE</button>
+                <button id="%">%</button>
+                <button class="operator">/</button>                
+            </div>
+
+            <div class="row">                
+                <button id="digit">7</button>
+                <button id="digit">8</button>
+                <button id="digit">9</button>
+                <button class="operator">+</button>                
+            </div>
+
+            <div class="row">                
+                <button id="digit">6</button>
+                <button id="digit">5</button>
+                <button id="digit">4</button>
+                <button class="operator">-</button>                
+            </div>
+
+            <div class="row">
+                <button id="digit">1</button>
+                <button id="digit">2</button>
+                <button id="digit">3</button>
+                <button class="operator">x</button>
+            </div>
+
+            <div class="row">
+                <button id="digit">.</button>
+                <button id="digit">0</button>
+                <button class="operator" style="flex: 2.1;">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/calculator.js"></script>
+</body>
+</html>

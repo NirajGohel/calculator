@@ -1,0 +1,57 @@
+//Colors
+$white: #f0f0f0;
+$light-grey: #bdbdbd;
+$light-blue: #2f9cf1;
+$dark-blue: #202b51;
+
+//Component - Input Type
+@mixin input {
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    outline: none;
+    border: 0.1rem solid $light-grey;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.5rem;
+    
+    &:disabled{
+        background-color: white;
+        color: #000;
+    }
+}
+
+//Component - Button
+@mixin button {
+    width: auto;
+    padding: 1rem 0;
+    outline: none;
+    border: 0.075rem solid $light-grey;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $light-grey;
+    }
+
+    &:active{
+        background-color: #f9f9f9;
+    }
+
+    &.operator{
+        background-color: $light-blue;
+        color: $white;
+        border: 0.075rem solid $light-blue;
+
+        &:hover{
+            background-color: #1976d2;
+            border: 0.075rem solid #1976d2;
+        }
+
+        &:active{
+            background-color: #f9f9f9;    
+            color: #000; 
+            border: 0.075rem solid $light-grey;
+        }
+    }
+}

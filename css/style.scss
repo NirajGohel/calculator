@@ -1,0 +1,58 @@
+@import 'component';
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #e2e2e2;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.container{
+    width: 25rem;
+    margin: 2rem auto;
+    background-color: #fafafa;
+    border: 1px solid #bdbdbb;
+
+    .input-container{
+        margin: 1rem;
+        input{
+            @include input;
+            &:not(:last-child){
+                border-bottom: none;
+            }
+            &:not(:first-child){
+                border-top: none;
+                text-align: right;
+            }
+        }
+    }
+
+    .button-container{
+        margin: 1rem;
+        button{
+            @include button;
+            flex: 1;
+            
+            &:not(:first-child){
+                margin-left: 0.5rem;
+            }
+        }   
+    }
+}
+
+.row{
+    width: auto;
+    display: flex;
+
+    &:first-child{
+        margin-top: 1rem;
+    }
+
+    &:not(:last-child){
+        margin-bottom: 0.5rem;
+    }
+
+    .col{
+        display: flex;
+    }
+}
